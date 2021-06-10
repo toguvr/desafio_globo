@@ -40,8 +40,6 @@ Este projeto Consiste em uma aplicação web em que seus usuários podem estar a
 
 <img src="./src/assets/desktop.gif"/>
 <img src="./src/assets/responsivo.gif"/>
-<video  src="./src/assets/Video_1623284617.wmv" autoplay / >
-<video  src="./src/assets/Video_1623284709.wmv" autoplay / >
 
 ### Feito Com
 
