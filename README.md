@@ -42,7 +42,6 @@ Este projeto Consiste em uma aplicação web em que seus usuários podem estar a
 
 Abaixo segue o que foi utilizado na criação deste projeto:
 
-- ReactJs
 - [ReactJs](https://pt-br.reactjs.org/) - Desativa todas as regras que são desnecessárias ou que podem dar conflito com o Prettier;
 - [Json-Server](https://www.npmjs.com/package/json-server) - Desativa todas as regras que são desnecessárias ou que podem dar conflito com o Prettier;
 - [Styled-Components](https://styled-components.com/) - Não utilizei nenhuma ui, fiz tudo com css puro;
@@ -69,7 +68,7 @@ Abaixo segue o que foi utilizado na criação deste projeto:
 git clone https://github.com/toguvr/desafio_globo.git
 ```
 
-2. Depois do projeto clonado você pode entrar na raiz do projeto e dar o comando `yarn`, após isto basta rodar `yarn start` para iniciar o front em reactjs e `yarn server` para iniciar a api fake **utilizada apenas para ficar mais próximo da realidade**.
+2. Depois do projeto clonado você pode entrar na pasta raiz do projeto e dar o comando `yarn` para instalar as dependências, após isto basta rodar `yarn start` para iniciar o front e `yarn server` para iniciar a api fake **utilizada apenas para ficar mais próximo da realidade**.
 
 ---
 
@@ -78,30 +77,32 @@ git clone https://github.com/toguvr/desafio_globo.git
 Deixei preparado dois usuários:
 
 1. Usuário comum (funcionário):
-   E-mail: **usuariocomum@teste.com.br**
-   Senha: **123456**
+
+- E-mail: **usuariocomum@teste.com.br**
+- Senha: **123456**
 
 2. Usuário admin (administrador):
-   E-mail: **usuarioadm@teste.com.br**
-   Senha: **123456**
+
+- E-mail: **usuarioadm@teste.com.br**
+- Senha: **123456**
 
 ### Criação de Usuário
 
 1. Para criar um usuário você precisa ser um administrador e ir na aba usuário no menu lateral:
 
-2. Na listagem de usuários basta clicar no botão "+ Usuário" para criá-lo **Um slider lateral irá abrir com os dados para serem preenchidos**
+2. Na listagem de usuários basta clicar no botão "+ Usuário" para criá-lo. **Um slider lateral irá abrir com os dados para serem preenchidos**
 
 ### Edição de Usuário
 
 1. Para editar um usuário você precisa ser um administrador e ir na aba usuário no menu lateral:
 
-2. Na listagem de usuários basta clicar no "lápis" para editá-lo **Não mostro a senha na edição por questão de segurança**
+2. Na listagem de usuários basta clicar no "lápis" para editá-lo. **Não mostro a senha na edição por questão de segurança**
 
 ### Exclusão de Usuário
 
 1. Para excluir um usuário você precisa ser um administrador e ir na aba usuário no menu lateral:
 
-2. Na listagem de usuários basta clicar no "lixo" para excluí-lo, irá aparecer um dialog box pedindo a confirmação **Ao confirmar o usuário será excluído de verdade**
+2. Na listagem de usuários basta clicar no "lixo" para excluí-lo, irá aparecer um dialog box pedindo a confirmação. **Ao confirmar o usuário será excluído de verdade**
 
 <!-- CONTACT -->
 
