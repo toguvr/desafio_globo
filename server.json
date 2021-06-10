@@ -20,13 +20,13 @@
     },
     {
       "email": "augustotf93@gmail.com",
-      "password": "$2a$08$uxeBDuEtrHMUZOjvPO5AmuBs93mhYiCZ50pMhOdqGHyPAoXj6rr26",
-      "role": "admin",
+      "password": "$2a$08$BKB4gHbU2tvrBRjVbWseCeT8GoBjlcNysKRmdFEr6SPp0ddqQFogq",
+      "role": "default",
       "id": 4
     },
     {
-      "email": "usuariocomum@teste.com.br",
-      "password": "$2a$08$KAHHVvxEnSXVMwAFntwqTuRCb6fsKISpCnTrGHAw7ih32Z2wM650e",
+      "email": "augusto_muralha@hotmail.com",
+      "password": "$2a$08$yxz9wBNCbgHKrqtV5MchT.jEKv4lXQES4j4OZWhNMuwHGZtvDEkLa",
       "role": "default",
       "id": 5
     }
