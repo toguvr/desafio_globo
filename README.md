@@ -40,13 +40,16 @@ Este projeto Consiste em uma aplicação web em que seus usuários podem estar a
 
 <img src="./src/assets/desktop.gif"/>
 <img src="./src/assets/responsivo.gif"/>
+<video  src="./src/assets/Video_1623284617.wmv" autoplay / >
+<video  src="./src/assets/Video_1623284709.wmv" autoplay / >
 
 ### Feito Com
 
 Abaixo segue o que foi utilizado na criação deste projeto:
 
-- [ReactJs](https://pt-br.reactjs.org/) - Desativa todas as regras que são desnecessárias ou que podem dar conflito com o Prettier;
-- [Json-Server](https://www.npmjs.com/package/json-server) - Desativa todas as regras que são desnecessárias ou que podem dar conflito com o Prettier;
+- [ReactJs](https://pt-br.reactjs.org/) - O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais;
+- [Typescript](https://www.typescriptlang.org/) - TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem;
+- [Json-Server](https://www.npmjs.com/package/json-server) - Fake Api rest para simulação de backend;
 - [Styled-Components](https://styled-components.com/) - Não utilizei nenhuma ui, fiz tudo com css puro;
 - [Axios](https://github.com/axios/axios) - O Axios é um cliente HTTP baseado em Promises para Browser e NodeJS;
 - [ESLint](https://eslint.org/) - O ESLint é uma ferramenta de lint plugável para JavaScript e JSX;
