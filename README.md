@@ -61,6 +61,9 @@ Abaixo segue o que foi utilizado na criação deste projeto:
   - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) - Roda o Prettier como uma regra do ESLint;
   - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) - Desativa todas as regras que são desnecessárias ou que podem dar conflito com o Prettier;
 - [EditorConfig](https://editorconfig.org/) - O EditorConfig é um formatador de arquivos e coleções em forma de Plugin para Editores de código/texto com o objetivo de manter um padrão de código consistente entre diferentes editores, IDE's ou ambientes;
+- [@testing-library/react](https://testing-library.com/) - Lib para fazer testes unitários, fiz como exemplo testes em componentes, hooks e em página;
+
+<img src="./src/assets/testsautomatizados.png"/>
 
 <!-- GETTING STARTED -->
 
@@ -107,6 +110,14 @@ Deixei preparado dois usuários:
 1. Para excluir um usuário você precisa ser um administrador e ir na aba usuário no menu lateral:
 
 2. Na listagem de usuários basta clicar no "lixo" para excluí-lo, irá aparecer um dialog box pedindo a confirmação. **Ao confirmar o usuário será excluído de verdade**
+
+### Rotas Privadas
+
+1. Usuário sem estar logado: **Roteamento o força para o login**
+
+2. Usuário logado, mas sem premissão administrador. **Roteamento o força para dashboard, caso digite rotas de administrador ou login, será redirecionado para dashboard**
+
+3. Usuário logado e com premissão administrador. **Roteamento somente não o permite ir para o login sem deslogar**
 
 <!-- CONTACT -->
 

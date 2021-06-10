@@ -1,9 +1,10 @@
 import React from 'react';
-import { render, fireEvent, wait } from '@testing-library/react';
-import SignIn from '../../pages/SignIn';
+import { render, fireEvent, waitFor } from '@testing-library/react';
+import SignIn from '../../pages/LoginPage';
+import { routes } from '../../routes';
 
 const mockedHistoryPush = jest.fn();
-const mockedAddToast = jest.fn();
+
 const mockedSignIn = jest.fn();
 
 jest.mock('react-router-dom', () => {
@@ -21,33 +22,27 @@ jest.mock('../../hooks/auth', () => {
   };
 });
 
-jest.mock('../../hooks/toast', () => {
-  return {
-    useToast: () => ({
-      addToast: mockedAddToast,
-    }),
-  };
-});
-
 describe('SignIn Page', () => {
   beforeEach(() => {
     mockedHistoryPush.mockClear();
   });
 
-  it('should be able to sign in', async () => {
+  it('should be able to sign in and go to dashboard', async () => {
     const result = render(<SignIn />);
 
     const emailField = result.getByPlaceholderText('E-mail');
     const passwordField = result.getByPlaceholderText('Senha');
     const buttonElement = result.getByText('Entrar');
 
-    fireEvent.change(emailField, { target: { value: 'augusto@gmail.com' } });
-    fireEvent.change(passwordField, { target: { value: '1234526' } });
+    fireEvent.change(emailField, {
+      target: { value: 'usuariocomum@teste.com.br' },
+    });
+    fireEvent.change(passwordField, { target: { value: '123456' } });
 
     fireEvent.click(buttonElement);
 
-    await wait(() => {
-      expect(mockedHistoryPush).toHaveBeenCalledWith('/dashboard');
+    waitFor(() => {
+      expect(mockedHistoryPush).toHaveBeenCalledWith(routes.dashboard);
     });
   });
 
@@ -63,7 +58,7 @@ describe('SignIn Page', () => {
 
     fireEvent.click(buttonElement);
 
-    await wait(() => {
+    waitFor(() => {
       expect(mockedHistoryPush).not.toHaveBeenCalled();
     });
   });
@@ -84,12 +79,8 @@ describe('SignIn Page', () => {
 
     fireEvent.click(buttonElement);
 
-    await wait(() => {
-      expect(mockedAddToast).toHaveBeenCalledWith(
-        expect.objectContaining({
-          type: 'error',
-        }),
-      );
+    waitFor(() => {
+      expect(mockedHistoryPush).not.toHaveBeenCalled();
     });
   });
 });
