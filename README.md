@@ -38,6 +38,9 @@
 
 Este projeto Consiste em uma aplicação web em que seus usuários podem estar acessando tanto pelo browser de suas máquinas quanto por seus dispositivos móveis. Sendo assim a aplicação é responsiva.
 
+<img src="./src/assets/desktop.gif"/>
+<img src="./src/assets/responsivo.gif"/>
+
 ### Feito Com
 
 Abaixo segue o que foi utilizado na criação deste projeto:
