@@ -77,6 +77,8 @@ git clone https://github.com/toguvr/desafio_globo.git
 
 2. Depois do projeto clonado você pode entrar na pasta raiz do projeto e dar o comando `yarn` para instalar as dependências, após isto basta rodar `yarn start` para iniciar o front e `yarn server` para iniciar a api fake **utilizada apenas para ficar mais próximo da realidade**.
 
+3. Caso não tenha o a lib **json-server** basta rodar o comando `npm install -g json-server`.
+
 ---
 
 #### Fazendo o login
