@@ -18,7 +18,7 @@ export const routes = {
 const Routes: React.FC = () => {
   return (
     <Switch>
-      <Route path={routes.users} component={UserPage} isPrivate />
+      <Route path={routes.users} component={UserPage} isPrivate isAdmin />
       <Route path={routes.dashboard} component={HomePage} isPrivate />
       <Route exact path={routes.index} component={LoginPage} />
       <Route path="*" component={ErrorPage} />

@@ -106,40 +106,41 @@ const UserPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
-                {users.map((user) => {
-                  return (
-                    <tr key={user.id}>
-                      <td>
-                        <p>{user.email}</p>
-                      </td>
-                      <td>
-                        <p>{user.role === 'admin' ? 'Sim' : 'Não'}</p>
-                      </td>
-                      <td>
-                        <div>
-                          <MdEdit
-                            size={20}
-                            cursor="pointer"
-                            color="var(--purple)"
-                            onClick={() => {
-                              setOpenUserSlider(true);
-                              setUserToEdit(user);
-                            }}
-                          />
-                          <MdDeleteForever
-                            onClick={() => {
-                              setOpenDelete(true);
-                              setUserToDelete(user);
-                            }}
-                            size={20}
-                            cursor="pointer"
-                            color="var(--red)"
-                          />
-                        </div>
-                      </td>
-                    </tr>
-                  );
-                })}
+                {Array.isArray(users) &&
+                  users.map((user) => {
+                    return (
+                      <tr key={user.id}>
+                        <td>
+                          <p>{user.email}</p>
+                        </td>
+                        <td>
+                          <p>{user.role === 'admin' ? 'Sim' : 'Não'}</p>
+                        </td>
+                        <td>
+                          <div>
+                            <MdEdit
+                              size={20}
+                              cursor="pointer"
+                              color="var(--purple)"
+                              onClick={() => {
+                                setOpenUserSlider(true);
+                                setUserToEdit(user);
+                              }}
+                            />
+                            <MdDeleteForever
+                              onClick={() => {
+                                setOpenDelete(true);
+                                setUserToDelete(user);
+                              }}
+                              size={20}
+                              cursor="pointer"
+                              color="var(--red)"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
               </tbody>
             </table>
           </div>
