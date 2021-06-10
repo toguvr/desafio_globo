@@ -1,0 +1,53 @@
+{
+  "name": "Desafio_Globo",
+  "short_name": "Desafio_Globo",
+  "theme_color": "#27E0AB",
+  "background_color": "#6931f4",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "images/icons/globo.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/globo.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/globo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/globo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/globo.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/globo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/globo.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/globo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}
